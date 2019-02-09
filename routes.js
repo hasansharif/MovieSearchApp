@@ -22,5 +22,11 @@ export var routesArray = [
       loader: () => import(/* webpackChunkName: "SignIn" */  './app/src/components/SignIn'),
       loading: getloader
     })
-  },
+  }, {
+    path: '/login',
+    component: Loadable({
+      loader: () => import(/* webpackChunkName: "Login" */  './app/src/components/Login'),
+      loading: getloader
+    })
+  }
 ]
